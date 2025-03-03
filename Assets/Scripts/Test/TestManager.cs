@@ -7,7 +7,6 @@
 // *****************************************************************************
 
 using HoshiVerseFramework.Base;
-using UnityEngine;
 
 namespace Test
 {

@@ -6,10 +6,7 @@
 // @description:
 // *****************************************************************************
 
-using System;
 using HoshiVerseFramework.Base.FSM;
-using Test.States;
-using UnityEngine;
 
 namespace Test
 {

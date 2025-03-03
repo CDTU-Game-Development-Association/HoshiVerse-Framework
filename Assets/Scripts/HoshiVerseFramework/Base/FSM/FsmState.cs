@@ -13,18 +13,16 @@ namespace HoshiVerseFramework.Base.FSM
 {
     public abstract class FsmState : MonoBehaviour, IState
     {
+        [SerializeField] protected string stateType;
+
+        [SerializeField] protected bool isDefaultState;
+
         /// <summary>
         /// 状态类型
         /// </summary>
         public string StateType => stateType;
 
         public bool IsDefaultState => isDefaultState;
-
-        [SerializeField]
-        protected string stateType;
-
-        [SerializeField]
-        protected bool isDefaultState;
 
         public abstract bool OnCheck(StateContext context = null);
         public abstract void OnEnter(StateContext context = null);

@@ -25,12 +25,10 @@ namespace Test.States
 
         public override void OnUpdate()
         {
-            
         }
 
         public override void OnFixedUpdate()
         {
-            
         }
 
         public override void OnExit(StateContext context = null)
