@@ -7,11 +7,14 @@
 // *****************************************************************************
 
 using System.Collections.Generic;
-using HoshiVerseFramework.Base.FSM.Interfaces;
+using HoshiVerseFramework.FSM.Interfaces;
 using UnityEngine;
 
-namespace HoshiVerseFramework.Base.FSM
+namespace HoshiVerseFramework.FSM
 {
+    /// <summary>
+    /// 有限状态机
+    /// </summary>
     public class Fsm
     {
         public readonly Dictionary<string, IState> statesDic = new(); // 状态字典

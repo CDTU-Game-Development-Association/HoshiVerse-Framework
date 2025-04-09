@@ -9,8 +9,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HoshiVerseFramework.Base.FSM
+namespace HoshiVerseFramework.FSM
 {
+    /// <summary>
+    /// 状态机Unity挂载脚本组件，自动添加本物体下所有的statesList中的状态
+    /// </summary>
     public class FsmComponent : MonoBehaviour
     {
         public List<FsmState> statesList = new();
