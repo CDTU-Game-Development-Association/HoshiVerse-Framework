@@ -27,7 +27,7 @@ namespace HoshiVerseFramework.Base.VFX
         /// <summary>
         /// 播放粒子特效
         /// </summary>
-        public void Play()
+        public virtual void Play()
         {
             particle.Play();
         }
@@ -35,7 +35,7 @@ namespace HoshiVerseFramework.Base.VFX
         /// <summary>
         /// 暂停粒子特效
         /// </summary>
-        public void Pause()
+        public virtual void Pause()
         {
             particle.Pause();
         }
@@ -43,7 +43,7 @@ namespace HoshiVerseFramework.Base.VFX
         /// <summary>
         /// 停止粒子特效
         /// </summary>
-        public void Stop()
+        public virtual void Stop()
         {
             particle.Stop();
         }
@@ -51,7 +51,7 @@ namespace HoshiVerseFramework.Base.VFX
         /// <summary>
         /// 恢复粒子特效
         /// </summary>
-        public void Resume()
+        public virtual void Resume()
         {
             particle.Play();
         }
@@ -59,7 +59,7 @@ namespace HoshiVerseFramework.Base.VFX
         /// <summary>
         /// 释放粒子特效
         /// </summary>
-        public void Release()
+        public virtual void Release()
         {
             pool.Release(gameObject);
         }
