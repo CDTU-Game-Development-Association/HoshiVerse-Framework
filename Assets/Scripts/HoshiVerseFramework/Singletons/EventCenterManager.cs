@@ -8,8 +8,9 @@
 
 using System;
 using System.Collections.Generic;
+using HoshiVerseFramework.Base;
 
-namespace HoshiVerseFramework.Base
+namespace HoshiVerseFramework.Singletons
 {
     public class EventCenterManager : Singleton<EventCenterManager>
     {

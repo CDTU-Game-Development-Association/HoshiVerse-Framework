@@ -6,7 +6,7 @@
 // @description:
 // *****************************************************************************
 
-namespace HoshiVerseFramework.Base.FSM.Interfaces
+namespace HoshiVerseFramework.FSM.Interfaces
 {
     public interface IState
     {

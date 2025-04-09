@@ -6,16 +6,12 @@
 // @description:
 // *****************************************************************************
 
-using HoshiVerseFramework.FSM;
-
-namespace Test
+namespace HoshiVerseFramework.FSM
 {
-    public class TestFsm : FsmComponent
+    /// <summary>
+    /// 状态机上下文，用于传递状态机所需的参数
+    /// </summary>
+    public class StateContext
     {
-        protected override void Update()
-        {
-            base.Update();
-            FsmStateMachine.SwitchState("Idle");
-        }
     }
 }

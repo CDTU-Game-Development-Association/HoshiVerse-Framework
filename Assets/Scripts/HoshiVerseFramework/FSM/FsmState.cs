@@ -6,11 +6,14 @@
 // @description:
 // *****************************************************************************
 
-using HoshiVerseFramework.Base.FSM.Interfaces;
+using HoshiVerseFramework.FSM.Interfaces;
 using UnityEngine;
 
-namespace HoshiVerseFramework.Base.FSM
+namespace HoshiVerseFramework.FSM
 {
+    /// <summary>
+    /// 状态基类，使用时创建一个新状态脚本，继承自FsmState即可
+    /// </summary>
     public abstract class FsmState : MonoBehaviour, IState
     {
         [SerializeField] protected string stateType;
