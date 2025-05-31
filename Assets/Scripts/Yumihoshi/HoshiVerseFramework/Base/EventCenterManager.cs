@@ -16,6 +16,12 @@ namespace HoshiVerseFramework.Singletons
     {
         private readonly Dictionary<Type, Delegate> _eventHandlers = new();
 
+        protected override void Awake()
+        {
+            base.Awake();
+            DontDestroyOnLoad(gameObject);
+        }
+
         /// <summary>
         /// 订阅事件
         /// </summary>
