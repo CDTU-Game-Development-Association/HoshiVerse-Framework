@@ -14,11 +14,13 @@ namespace HoshiVerseFramework.Base
     {
         private static T _instance;
         private static readonly object Lock = new();
+        private static bool _applicationIsQuitting;
 
         public static T Instance
         {
             get
             {
+                if (_applicationIsQuitting) return null;    // 避免退出播放模式时，实例重建
                 if (_instance != null) return _instance;
                 lock (Lock)
                 {
@@ -46,7 +48,11 @@ namespace HoshiVerseFramework.Base
 
         protected virtual void OnDestroy()
         {
-            if (_instance == this) _instance = null;
+            if (_instance == this)
+            {
+                _instance = null;
+                _applicationIsQuitting = true;      // 标记退出状态
+            }
         }
     }
 }
